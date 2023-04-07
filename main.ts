@@ -89,19 +89,41 @@ interface objectIntfs {
 //         age:18,
 //         gender:'male'
 //     }
+    interface user {
+        name: string;
+        age: number;
+        gender: string;
+    }
+//заповнив юзера
+const user = {name: 'Max', age: 18, gender: 'male'};
 //
 // function sum(a,b){
 //     return a+b
 // }
+const sum = (a: number,b: number) => {
+    return a+b
+}
+//
 // function showSum(a,b){
 //     console.log(a + b);
 // }
+const showSum = (a: number, b: number) => {
+    console.log(a + b);
+}
 //
 // function incAge(someUser, inc){
 //     someUser.age+=inc
 //     return someUser
 // }
+const incAge = (someUser, inc: number) => {
+    someUser.age+=inc
+    return someUser
+}
 //
 // console.log(sum(1, 2));
 // showSum(2,3)
 // incAge(user, 2)
+console.log(sum(1, 2));
+showSum(2,3)
+incAge(user, 2)
+// console.log(incAge(user, 2));
