@@ -81,7 +81,6 @@ interface objectIntfs {
 
 
 
-
 // 2) протипізувати функції:
 //
 //     const user = {
