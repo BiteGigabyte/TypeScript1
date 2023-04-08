@@ -95,7 +95,7 @@ interface objectIntfs {
         gender: string;
     }
 //заповнив юзера
-const user = {name: 'Max', age: 18, gender: 'male'};
+const users:user = {name: 'Max', age: 18, gender: 'male'};
 //
 // function sum(a,b){
 //     return a+b
@@ -125,5 +125,5 @@ const incAge = (someUser, inc: number) => {
 // incAge(user, 2)
 console.log(sum(1, 2));
 showSum(2,3)
-incAge(user, 2)
+incAge(users, 2)
 // console.log(incAge(user, 2));
