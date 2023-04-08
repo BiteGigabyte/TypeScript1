@@ -100,14 +100,14 @@ const users:user = {name: 'Max', age: 18, gender: 'male'};
 // function sum(a,b){
 //     return a+b
 // }
-const sum = (a: number,b: number) => {
+const sum = (a: number,b: number) : number=> {
     return a+b
 }
 //
 // function showSum(a,b){
 //     console.log(a + b);
 // }
-const showSum = (a: number, b: number) => {
+const showSum = (a: number, b: number) : void => {
     console.log(a + b);
 }
 //
@@ -115,7 +115,7 @@ const showSum = (a: number, b: number) => {
 //     someUser.age+=inc
 //     return someUser
 // }
-const incAge = (someUser, inc: number) => {
+const incAge = (someUser, inc: number) : user => {
     someUser.age+=inc
     return someUser
 }
